@@ -1,0 +1,252 @@
+:root{
+    --background: #876445;
+    --color: #f7ede2;
+    --accent: #CA965C;
+    --shade: #c5be8fd3;
+}
+*{
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* nav-bar */
+
+
+.con{
+    background-color: var(--background);
+    color: var(--color);
+    height:100%;
+}
+.nav{
+    margin: 0px 150px;
+}
+
+
+/* home-page */
+
+
+.intro{
+    padding: 0 0 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{ 
+    margin: 0;
+    padding: 100px 150px 0 150px;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.home-btn{
+    margin:95px 10px;
+}
+
+.dog-img{
+    height: 300px;
+}
+
+
+/* features */
+
+
+#features{
+    padding: 150px 150px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+    padding: 25px 0;
+}
+.feature h3{
+    margin: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+.feature p{
+    color: var(--shade);
+    margin: 0;
+}
+.icn{
+    color: var(--background);
+}
+.icn:hover{
+    color: var(--accent);
+}
+
+
+/* testimonials */
+
+
+#testimonials{
+    background-color: var(--accent);
+    color: var(--color);
+    text-align: center;
+}
+#testimonials h2{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+#press {
+    background-color: var(--accent);
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-img{
+    width:15%;
+    margin: 20px 20px 30px;
+}
+
+/* pricing*/
+
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+    color: var(--shade);
+}
+.pricing-coloumn{
+    padding: 3% 2%;
+}
+.pricing-heading{
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+.price{
+    color: black;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* cta */
+
+
+#cta {
+    background-color: var(--background);
+    color: var(--color);
+    padding: 0 100px;
+}
+#cta h3{
+    margin-top: 150px;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+#cta .btns{
+    display: flex;
+    margin: 30px 0 150px;
+    justify-content: center;
+}
+.below-btn {
+    margin: 0 10px;
+}
+
+/* footer */
+
+
+footer{
+    padding: 10% 0;
+    text-align: center;
+    color: var(--shade);
+}
+footer .icn{
+    padding:0 3% 35px;
+    
+}
+
+/* media query */
+
+
+@media screen and (max-width: 1160px) {
+    .nav{
+        margin: 0px 100px;
+    }
+    .intro{
+        padding: 10px 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading{ 
+        padding: 78px;
+    }
+    .btn{
+        margin:0px 30px;
+    }
+    .dog-img{
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    #features{
+        padding: 50px 90px;
+    }
+    #cta{  
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .nav{
+        margin: 0px 50px;
+    }
+    .intro{
+        padding: 0px 50px;
+    }
+    .heading{ 
+        padding: 50px;
+        font-size: 45px;
+    }
+    .btn{
+        margin:0 5px 60px 5px;
+        width: 150px;
+        height: auto;
+    }
+    .dog-img{
+        height: 150px;
+    }
+    #cta h3{
+        margin-top: 100px;
+    }
+    #cta .btns{
+        margin: 30px 0 100px;
+    }
+    #testimonials h2{
+    font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+    #cta h3{
+        margin-top: 50px;
+    }
+    #cta .btns{
+        margin: 30px 0 50px;
+    }
+    
+}
