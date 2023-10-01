@@ -24,6 +24,9 @@
 .nav{
     margin: 0px 150px;
 }
+.navbar-brand{
+    font-weight:900;
+}
 
 
 /* home-page */
@@ -174,6 +177,10 @@ footer .icn{
     padding:0 3% 35px;
     
 }
+ #footer button{
+    all: unset;
+    display: inline-block;
+ }
 
 /* media query */
 
